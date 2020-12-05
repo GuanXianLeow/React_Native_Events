@@ -10,7 +10,23 @@ import {
   Body,
   Button,
   Icon,
+  Accordion,
 } from "native-base";
+
+const dataArray = [
+  {
+    title: "What is this?",
+    content: "Exactly what the title says. A potato exhibition!",
+  },
+  {
+    title: "Who is this by?",
+    content: "The International Society of Potato Growers.",
+  },
+  {
+    title: "Why is this?",
+    content: "Because potatoes! Wheee!",
+  },
+];
 
 function HomeMainScreen() {
   return (
@@ -36,6 +52,8 @@ function HomeMainScreen() {
           />
         </CardItem>
       </Card>
+
+      <Accordion style={styles.accordion} dataArray={dataArray} expanded={0} />
     </View>
   );
 }
@@ -64,6 +82,5 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
 });
-
 
 
