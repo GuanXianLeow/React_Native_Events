@@ -1,3 +1,4 @@
+
 import React from "react";
 import { View, StyleSheet, Image } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
@@ -16,22 +17,22 @@ import {
 const dataArray = [
   {
     title: "What is this?",
-    content: "Exactly what the title says. A potato exhibition!",
+    content: "Christmas Events",
   },
   {
     title: "Who is this by?",
-    content: "The International Society of Potato Growers.",
+    content: "Red nose reindeer.",
   },
   {
     title: "Why is this?",
-    content: "Because potatoes! Wheee!",
+    content: "Reindeer who only work ones a year",
   },
 ];
 
 function HomeMainScreen() {
   return (
     <View style={{ padding: 10 }}>
-      <Text style={styles.titleText}>International Potato Day</Text>
+      <Text style={styles.titleText}>Christmas 2020</Text>
       <Card style={styles.card}>
         <CardItem>
           <Body>
@@ -46,7 +47,7 @@ function HomeMainScreen() {
           <Image
             source={{
               uri:
-                "https://upload.wikimedia.org/wikipedia/commons/a/ab/Patates.jpg",
+                "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3e8c0cac-ecd2-4e37-ba25-f3cfc79d9fbc/d6zqkyo-8db6b56f-b815-4af5-888d-67d9877333a6.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvM2U4YzBjYWMtZWNkMi00ZTM3LWJhMjUtZjNjZmM3OWQ5ZmJjXC9kNnpxa3lvLThkYjZiNTZmLWI4MTUtNGFmNS04ODhkLTY3ZDk4NzczMzNhNi5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.oXREx2AT3KGF5HIdBz-RfX444tyNfVFtSnLjP01AIZE",
             }}
             style={{ height: 200, width: null, flex: 1 }}
           />
